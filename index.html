@@ -1,19 +1,75 @@
----
----
 <!DOCTYPE html>
-<html lang="en">
-{% include header.html %}
+<html lang=en>
+
+<head>
+	<title>BGS Student Forum | Shakeel Majeed </title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
 
 <body>
-    {% include navbar.html %}
+	<!-- Body -->
+	<style type="text/css">
+		.main{
+			min-height: 100vh;
+			height: 100%;
 
-    {% include profile.html %}
+		}
+	</style>
 
-    {% include projects.html %}
+	<div class="main">
+        <div class="container">
+            <div class="jumbotron">
+              <h1>BGSTUDENTFORUM:</h1>
+              <p>I created a forum (October 2018 - August 2020) using Django as a side project but hosting it was too costly 
+                  and so this website shows a visual representation of what it would have looked like. To view the source code you can go 
+                  <a href="https://github.com/shakeelmajeed-work/bgstudentforum">here.</a></p>
+            <h5>The forum had many features with a fully functional front-end and back-end:</h5>
+            <ul>
+                <li>CRUD capabilities with Blog Posts (Create, Retrieve, Update and Delete)</li>
+                <li>User Authentication</li>
+                <li>Commenting Feature</li>
+                <li>User Advertisements</li>
+                <li>Filtering through Blog Posts with a Search Bar</li>
+                <li>Password Resetting through email</li>
+                <li>Google Analytics Intergration</li>
+                <li>Admin panel</li>
+                <li>And much more!</li>
 
-    {% include experience.html %}
+            </ul>
+            <p>The website was hosted on Digital Ocean using Digital Ocean Spaces S3 and AWS for Object Storage (static files). 
+                I also used Decoupling for the Settings.py file for extra security!</p>
+            <hr></hr>
+            <p>Below are pictorial representations of the website:</p>
+            <ol>
+                <li><img width ="1000" height="600" src="Home_Screen.png"></li>
+                <li><img width ="1000" height="600" src="https://github.com/shakeelmajeed-work/bgstudentforum/blob/master/Screenshot%202020-11-22%20at%2014.01.13.png?raw=true"></li>
+                <li><img width ="1000" height="600" src="Log_In.png"></li>
+                <li><img width ="1000" height="600" src="Forgot_Password.png"></li>
+                <li><img width ="1000" height="600" src="https://github.com/shakeelmajeed-work/bgstudentforum/blob/master/Screenshot%202020-11-22%20at%2013.58.52.png?raw=true">
+                </li>
+                <li><img width ="1000" height="600" src="https://github.com/shakeelmajeed-work/bgstudentforum/blob/master/Screenshot%202020-11-22%20at%2013.59.38.png?raw=true"></li>
+                <li><img width ="1000" height="600" src="Upload_Blog.png"></li>
+                <li><img width ="1000" height="600" src="https://github.com/shakeelmajeed-work/bgstudentforum/blob/master/Screenshot%202020-11-22%20at%2014.00.39.png?raw=true"></li>
+                <li><img width ="1000" height="600" src="Admin_Page.png"></li>
+            </ol>
+            </div>
+		
+	</div>
+	
+	<!-- End Body -->
 
-    {% include education.html %}
 </body>
 
+<footer class="bg-light text-center text-lg-start">
+   
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      <a class="text-dark" href="https://www.linkedin.com/in/shakeel-majeed/">By Shakeel Majeed</a>
+    </div>
+   
+</footer>
+
 </html>
+
+
